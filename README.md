@@ -1,27 +1,60 @@
-# NgRestClient
+# Rest Client
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.10.
+This is a simple REST client that can be used to make HTTP requests to a server. It is built with Electron and Angular to provide a simple and easy to use interface.
 
-## Development server
+![Screenshot](screenshot.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- Send GET, POST, PUT, DELETE requests
+- Add headers and body to requests
+- View response headers and body
+- Show performance metrics for requests
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation
 
-## Build
+The generated executable are quite large so I encourage you to build the client from source. Just follow the instructions below.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Building from source
 
-## Running unit tests
+To build the client from source, clone the repository and run the following commands:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Clone the repository
 
-## Running end-to-end tests
+```bash
+https://github.com/dan-koller/rest-client && cd rest-client
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+2. Install dependencies
 
-## Further help
+```bash
+npm i
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+3. Build the client
+
+```bash
+npm run electron-build
+```
+
+_Verify the app is working and close it using `Ctrl+C` in the terminal._
+
+4. Compile the executable for your platform
+
+```bash
+npm run make
+```
+
+The executable will be located in the `out/rest-client-<platform>-<arch>/` directory.
+
+## Usage
+
+To use the client, enter the URL of the server you want to make a request to. Select the request type from the dropdown and add any headers or body you want to send. Click the "Send" button to make the request. The response will be displayed in the "Response" tab below.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+The original idea for this project comes from WebDevSimplified's [postman-clone](https://github.com/WebDevSimplified/postman-clone). I used his project as a starting point to create a desktop application with Electron and Angular.
