@@ -4,13 +4,13 @@ let win;
 
 function createWindow() {
   win = new BrowserWindow({
-    width: 1280,
-    height: 720,
+    width: 800,
+    height: 600,
     backgroundColor: "#ffffff",
   });
 
   // **dirname is a node variable that gives us the path to the current directory
-  win.loadFile(`${__dirname}/dist/ng-rest-client/browser/index.html`);
+  win.loadFile(`${__dirname}/dist/rest-client/browser/index.html`);
 
   // Use dev tools when needed
   // win.webContents.openDevTools();

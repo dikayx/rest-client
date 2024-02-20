@@ -9,16 +9,16 @@ import setupEditors, { EditorSetup } from './setupEditor';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'ng-rest-client';
-  editorSetup!: EditorSetup; // Add ! to indicate it's definitely assigned in the ngOnInit
+  title = 'rest-client';
+  editorSetup!: EditorSetup;
 
   form!: any;
   queryParamsContainer!: HTMLElement;
   requestHeadersContainer!: HTMLElement;
   responseHeadersContainer!: HTMLElement;
   keyValueTemplate!: HTMLTemplateElement;
-  requestEditor: any; // You might need to adjust this type based on the actual type returned from setupEditors
-  updateResponseEditor: any; // You might need to adjust this type based on the actual type returned from setupEditors
+  requestEditor: any; 
+  updateResponseEditor: any;
 
   constructor() {}
 
