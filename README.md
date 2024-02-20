@@ -22,7 +22,7 @@ To build the client from source, clone the repository and run the following comm
 1. Clone the repository
 
 ```bash
-https://github.com/dan-koller/rest-client && cd rest-client
+git clone https://github.com/dan-koller/rest-client && cd rest-client
 ```
 
 2. Install dependencies
